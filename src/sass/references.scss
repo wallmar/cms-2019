@@ -11,15 +11,10 @@ main{
       "quote_ubuntu  quote_ubuntu  quote_ubuntu  empty_herzog  text_mueller  text_mueller text_mueller text_mueller";
     #pic_ubuntu{
       grid-area: pic_ubuntu;
-
       background-image:url("../images/dina-meyer.jpg");
       background-color:rgb(255,252,214);
       background-size:cover;
       background-position:center;
-      margin:10px;
-    }
-    #test{
-      background-color:rgb(255,252,214);
     }
     #name_ubuntu{
       grid-area: name_ubuntu;
@@ -39,6 +34,7 @@ main{
     #name_herzog{
       grid-area: name_herzog;
       background-color:rgb(199,235,252);
+      text-align:right;
     }
     #quote_herzog{
       grid-area: quote_herzog;
@@ -56,6 +52,7 @@ main{
         height:180px;
         padding:10px;
       }
+
     }
     #pic_mueller{
       grid-area: pic_mueller;
@@ -67,6 +64,16 @@ main{
     #text_mueller{
       grid-area: text_mueller;
       background-color:rgb(217,235,211);
+    }
+    #name_mueller{
+      text-align:right;
+    }
+    cite{
+      font-style:normal;
+    }
+    *{
+      padding:10px;
+      display:block;
     }
   }
 }
