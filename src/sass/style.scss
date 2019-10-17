@@ -4,11 +4,13 @@ $myColor: #ff00ff;
 $myFont: 'Zilla Slab';
 $smallSize: 15pt;
 $largeSize: 50pt;
+$mediumSize: 22pt;
 
 * {
   box-sizing:border-box;
   font-family: $myFont;
   font-size:$smallSize;
+  font-weight: 400;
   padding: 0;
   margin: 0;
 }
