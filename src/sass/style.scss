@@ -1,0 +1,10 @@
+@import 'header.scss','services.scss','news.scss','references.scss','footer.scss';
+
+$myColor: #ff00ff;
+$myFont: 'Zilla Slab';
+
+* {
+  box-sizing:border-box;
+  font-family: $myFont;
+
+}

@@ -1,3 +1,3 @@
-import './sass/styles.scss'
+import './sass/style.scss'
 
 console.log("test");
