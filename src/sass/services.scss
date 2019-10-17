@@ -1,0 +1,29 @@
+main{
+  .flex{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  #services{
+    width: 100%;
+    li {
+      display:block;
+      height:300px;
+      width:300px;
+      text-align:center;
+    }
+    #design{
+      background-color:rgb(255,252,214);
+    }
+    #strategie{
+      background-color:rgb(199,235,252);
+    }
+    #consulting{
+      background-color:rgb(217,235,211);
+    }
+    svg{
+      height:200px;
+      width:200px;
+    }
+  }
+}
