@@ -1,36 +1,54 @@
 main{
   .grid{
     display: grid;
+    height:500px;
+    width:100%;
     grid-template-areas:
-      "pic_ubuntu | name_herzog | name_herzog | pic_herzog | symbol | pic_mueller | pic_mueller | pic_mueller"
-      "name_ubuntu | name_ubuntu | quote_herzog | quote_herzog | symbol | pic_mueller | pic_mueller | pic_mueller"
-      "quote_ubuntu | quote_ubuntu | quote_ubuntu | empty_herzog | text_mueller | text_mueller| text_mueller| text_mueller";
+      "pic_ubuntu  name_herzog  name_herzog  pic_herzog  symbol  pic_mueller  pic_mueller  pic_mueller"
+      "name_ubuntu  name_ubuntu  quote_herzog quote_herzog  symbol  pic_mueller  pic_mueller  pic_mueller"
+      "quote_ubuntu  quote_ubuntu  quote_ubuntu  empty_herzog  text_mueller  text_mueller text_mueller text_mueller";
     #pic_ubuntu{
       grid-area: pic_ubuntu;
+      background-color:rgb(255,252,214);
+      background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Lenna_%28test_image%29.png/220px-Lenna_%28test_image%29.png");
     }
     #name_ubuntu{
       grid-area: name_ubuntu;
+      background-color:rgb(255,252,214);
     }
     #quote_ubuntu{
       grid-area: quote_ubuntu;
+      background-color:rgb(255,252,214);
     }
     #pic_herzog{
       grid-area: pic_herzog;
+      background-color:rgb(199,235,252);
+      background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Lenna_%28test_image%29.png/220px-Lenna_%28test_image%29.png");
     }
     #name_herzog{
       grid-area: name_herzog;
+      background-color:rgb(199,235,252);
     }
     #quote_herzog{
       grid-area: quote_herzog;
+      background-color:rgb(199,235,252);
+    }
+    #empty_herzog{
+      grid-area: empty_herzog;
+      background-color:rgb(199,235,252);
     }
     #symbol{
       grid-area: symbol;
+      background-color:rgb(0,173,238);
     }
     #pic_mueller{
       grid-area: pic_mueller;
+      background-color:rgb(217,235,211);
+      background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Lenna_%28test_image%29.png/220px-Lenna_%28test_image%29.png");
     }
     #text_mueller{
       grid-area: text_mueller;
+      background-color:rgb(217,235,211);
     }
   }
 }
