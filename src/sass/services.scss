@@ -12,6 +12,7 @@ main{
       width:300px;
       text-align:center;
       border-radius:5px;
+      padding:20px;
     }
     #design{
       background-color:rgb(255,252,214);
@@ -23,8 +24,9 @@ main{
       background-color:rgb(217,235,211);
     }
     svg{
-      height:200px;
-      width:200px;
+      height:100%;
+      width:180px;
+      margin-top:-25px;
     }
   }
 }
