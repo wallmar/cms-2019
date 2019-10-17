@@ -2,9 +2,22 @@
 
 $myColor: #ff00ff;
 $myFont: 'Zilla Slab';
+$smallSize: 2em;
+$largeSize: 4em;
 
 * {
   box-sizing:border-box;
   font-family: $myFont;
+  font-size:$smallSize;
+}
 
+.full-width-container{
+  width:100%;
+  margin: 0 auto;
+}
+
+.max-width-container{
+  width:100%;
+  max-width:800px;
+  margin: 0 auto;
 }
