@@ -2,8 +2,8 @@
 
 $myColor: #ff00ff;
 $myFont: 'Zilla Slab';
-$smallSize: 2em;
-$largeSize: 4em;
+$smallSize: 12pt;
+$largeSize: 14pt;
 
 * {
   box-sizing:border-box;
@@ -18,6 +18,6 @@ $largeSize: 4em;
 
 .max-width-container{
   width:100%;
-  max-width:800px;
+  max-width:1000px;
   margin: 0 auto;
 }

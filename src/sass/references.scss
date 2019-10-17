@@ -1,3 +1,36 @@
-body{
-  font-size:44pt;
+main{
+  .grid{
+    display: grid;
+    grid-template-areas:
+      "pic_ubuntu | name_herzog | name_herzog | pic_herzog | symbol | pic_mueller | pic_mueller | pic_mueller"
+      "name_ubuntu | name_ubuntu | quote_herzog | quote_herzog | symbol | pic_mueller | pic_mueller | pic_mueller"
+      "quote_ubuntu | quote_ubuntu | quote_ubuntu | empty_herzog | text_mueller | text_mueller| text_mueller| text_mueller";
+    #pic_ubuntu{
+      grid-area: pic_ubuntu;
+    }
+    #name_ubuntu{
+      grid-area: name_ubuntu;
+    }
+    #quote_ubuntu{
+      grid-area: quote_ubuntu;
+    }
+    #pic_herzog{
+      grid-area: pic_herzog;
+    }
+    #name_herzog{
+      grid-area: name_herzog;
+    }
+    #quote_herzog{
+      grid-area: quote_herzog;
+    }
+    #symbol{
+      grid-area: symbol;
+    }
+    #pic_mueller{
+      grid-area: pic_mueller;
+    }
+    #text_mueller{
+      grid-area: text_mueller;
+    }
+  }
 }
