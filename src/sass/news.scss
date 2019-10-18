@@ -1,12 +1,5 @@
 #news{
     margin-top: 40pt;
-
-    h2{
-        margin-bottom: 15pt;
-        color: #00b9f2;
-        font-size: 22pt;
-    }
-
     ul{
         background-color: #faddd3;
         padding: 5pt;
@@ -15,11 +8,6 @@
         li{
             padding: 3pt;
             list-style: none;
-
-            a{
-                text-decoration: none;
-                color: #00b9f2;
-            }
         }
     }
 }

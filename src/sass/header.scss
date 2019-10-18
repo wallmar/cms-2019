@@ -22,6 +22,7 @@ header{
             justify-content: space-evenly;
             list-style: none;
             margin-top: 20pt;
+            flex-wrap:wrap;
 
             a{
                 text-decoration: none;
@@ -34,7 +35,7 @@ header{
         }
     }
     #hero{
-        background-image: url(http://www.laptoponbudget.com/wp-content/uploads/2019/03/Chromebook-with-backlit-keyboard.jpg);
+        background-image: url("../images/illuminated-keyboard-1242287.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -42,7 +43,7 @@ header{
         align-items: flex-end;
 
         div{
-            width: 50%;
+            padding-right:50px;
             margin: 25pt 0;
         }
         p{
