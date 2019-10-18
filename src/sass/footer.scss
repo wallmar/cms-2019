@@ -2,4 +2,29 @@ footer{
     background-color: #00b9f2;
     margin-top: 40pt;
     color: white;
+    padding: 5pt;
+
+    #footer-copyright-legal{
+        display: flex;
+        justify-content: space-between;
+
+        #copyright{
+            width: 50%;
+        }
+    }
+    #credits{
+        margin-top: 40pt;
+
+        div{
+            ul{
+                width: 96%;
+                margin: 0 auto;
+
+                li{
+                    font-size: 12pt;
+                    padding-left: 12pt;
+                }
+            }
+        }
+    }
 }
