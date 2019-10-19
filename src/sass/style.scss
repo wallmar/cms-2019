@@ -3,8 +3,8 @@
 $myColor: #ff00ff;
 $myFont: 'Zilla Slab';
 $smallSize: 15pt;
-$largeSize: 50pt;
-$mediumSize: 22pt;
+$largeSize: 3em;
+$mediumSize: 1.5em;
 
 * {
   box-sizing:border-box;
@@ -28,9 +28,9 @@ $mediumSize: 22pt;
 }
 
 h2{
-  margin-bottom: 15pt;
+  margin-bottom: 0.8em;
   color: #00b9f2;
-  font-size: 22pt;
+  font-size: $mediumSize;
 }
 
 a{

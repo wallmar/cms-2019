@@ -1,6 +1,6 @@
 footer{
     background-color: #00b9f2;
-    margin-top: 40pt;
+    margin-top: 2em;
     color: white;
     padding: 0 1em 5em;
 
@@ -10,7 +10,7 @@ footer{
 
         section{
             p{
-                margin: 1em 0;
+                margin: 1.5em 0;
                 line-height: 1.5em;
             }
         }
@@ -27,7 +27,6 @@ footer{
        
     }
     #credits{
-        margin-top: 40pt;
 
         p{
             margin: 0.6em 0;
@@ -42,8 +41,8 @@ footer{
                 margin: 0 auto;
 
                 li{
-                    font-size: 12pt;
-                    padding-left: 12pt;
+                    font-size: 0.8em;
+                    padding-left: 0.8em;
                 }
             }
         }
