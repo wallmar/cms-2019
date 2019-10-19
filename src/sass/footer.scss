@@ -2,20 +2,41 @@ footer{
     background-color: #00b9f2;
     margin-top: 40pt;
     color: white;
-    padding: 5pt;
+    padding: 0 1em 5em;
 
     #footer-copyright-legal{
         display: flex;
         justify-content: space-between;
 
+        section{
+            p{
+                margin: 1em 0;
+                line-height: 1.5em;
+            }
+        }
+
         #copyright{
             width: 50%;
         }
+        #legal{
+            a{
+                color: white;
+                cursor: pointer;
+            }
+        }
+       
     }
     #credits{
         margin-top: 40pt;
 
+        p{
+            margin: 0.6em 0;
+        }
+
         div{
+            p{
+                margin-bottom: 0.3em;
+            }
             ul{
                 width: 96%;
                 margin: 0 auto;
