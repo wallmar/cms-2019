@@ -1,10 +1,4 @@
-@import 'header', 'services', 'news', 'references', 'footer';
-
-$myColor: #ff00ff;
-$myFont: 'Zilla Slab';
-$smallSize: 15pt;
-$largeSize: 3em;
-$mediumSize: 1.5em;
+@import 'header', 'services', 'news', 'references', 'footer', 'utilities';
 
 * {
   box-sizing:border-box;
@@ -14,25 +8,18 @@ $mediumSize: 1.5em;
   padding: 0;
   margin: 0;
 }
-
-.full-width-container{
-  width:100%;
-  margin: 0 auto;
-}
-
 .max-width-container{
   width:100%;
   max-width:1000px;
   margin: 0 auto;
   padding:20px;
 }
-
 h2{
+  margin-top:0.8em;
   margin-bottom: 0.8em;
   color: #00b9f2;
   font-size: $mediumSize;
 }
-
 a{
   text-decoration: none;
   color: #00b9f2;
