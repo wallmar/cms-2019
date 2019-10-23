@@ -8,6 +8,12 @@
     "pic_ubuntu  name_herzog  name_herzog  pic_herzog  symbol  pic_mueller  pic_mueller  pic_mueller"
     "name_ubuntu  name_ubuntu  quote_herzog quote_herzog  symbol  pic_mueller  pic_mueller  pic_mueller"
     "quote_ubuntu  quote_ubuntu  quote_ubuntu  empty_herzog  text_mueller  text_mueller text_mueller text_mueller";
+  @media screen and (max-width: 600px){
+    &{
+      display: flex;
+      flex-direction: column;
+    }
+  }
   *{
     padding: 10px;
     display: block;
@@ -15,6 +21,11 @@
   &__picture{
     background-size: cover;
     background-position: center;
+    @media screen and (max-width: 600px){
+      &{
+        height: 300px;
+      }
+    }
     &--ubuntu{
       grid-area: pic_ubuntu;
       background-image: url("../images/dina-meyer.jpg");
