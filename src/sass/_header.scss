@@ -9,7 +9,7 @@
         width: 100%;
         background-color: #ffffff;
         z-index: 1;
-        top: 0;
+        top: 0;  
     }
     &__logo{
         font-size: 3em;
@@ -18,7 +18,47 @@
     }
     &__nav{
         width: 50%;
+
+        &-toggle-input{
+            display: none;
+        }
+        &-toggle-label{
+            display: none;
+        }
+
+        @media screen and (max-width: 800px){
+            &-toggle-label{
+                display: block;
+                position: absolute;
+                right: 0;
+                cursor: pointer;
+                font-size: 2em;
+                margin: 15px 1em;
+                color: #00b9f2;
+            }
+        }
+
+        @media screen and (max-width: 620px){
+            width: 10%;
+        }
     }
+
+    @media screen and (max-width: 800px){
+        &__nav input:checked + &__list{
+            display: flex;
+            margin: 5em auto 0;
+            flex-direction: column;
+            align-content: end;
+            border-right: solid #00b9f2 3px;
+
+            li{
+                text-align: right;
+                margin: 0 1em;
+                padding: 0.5em;
+            }
+        }
+    }
+
     &__list{
         display: flex;
         flex-direction: row;
@@ -26,7 +66,14 @@
         list-style: none;
         margin-top: 1.5em;
         flex-wrap:wrap;
+
+        @media screen and (max-width: 800px){
+            &{
+                display: none;
+            }
+        }
     }
+
     &__link{
         text-decoration: none;
         color: black;
