@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 
 module.exports = {
     entry: "./src/index.js",
@@ -28,19 +29,18 @@ module.exports = {
                         name: 'images/[hash]-[name].[ext]'
                     }
                 }]
-            }
+            },
+            { test: /\.ejs$/,
+                loader: 'ejs-loader'
+            },
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: "./index.html",
-            inject: true
-        }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: '[name].css',
             chunkFilename: '[id].css',
-        }),
+        })
     ]
 };
