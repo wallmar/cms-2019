@@ -6,7 +6,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         filename: "main.js",
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, './dist')
     },
     module: {
         rules: [
@@ -28,19 +28,31 @@ module.exports = {
                         name: 'images/[hash]-[name].[ext]'
                     }
                 }]
+            },
+            {
+                test: /\.html$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        interpolate: true
+                    }
+                }
             }
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: "./index.html",
-            inject: true
-        }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: '[name].css',
             chunkFilename: '[id].css',
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/index.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/about.html'),
+            filename: 'about.html',
         }),
     ]
 };
