@@ -1,4 +1,4 @@
-${require('./partials/_header.html')}
+<%= require('html-loader!./partials/_header.html') %>
 <main>
     <section class="max-width-container">
         <h2>Leistungen</h2>
@@ -121,5 +121,9 @@ ${require('./partials/_header.html')}
             </div>
         </div>
     </section>
+    <script>
+        let elem = document.getElementsByClassName("header__hero")[0];
+        elem.classList.add("header__hero--home");
+    </script>
 </main>
-${require('./partials/_footer.html')}
+<%= require('html-loader!./partials/_footer.html') %>

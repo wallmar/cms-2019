@@ -83,13 +83,18 @@
         }
     }
     &__hero{
-        background-image: url("../images/illuminated-keyboard-1242287.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 100px;
+        &--about{
+            background-image: url("../images/about-us.jpg");
+        }
+        &--home{
+            background-image: url("../images/illuminated-keyboard-1242287.jpg");
+        }
         &__container{
             padding-right: 5%;
             margin: 1.8em 0;
