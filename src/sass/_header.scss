@@ -89,6 +89,10 @@
             color: $primaryColor;
             text-decoration: underline;
         }
+        &:active{
+            color: $primaryColor;
+            text-decoration: underline;
+        }
     }
     &__hero{
         background-repeat: no-repeat;

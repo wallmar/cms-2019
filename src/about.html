@@ -1,4 +1,11 @@
 <%= require('html-loader!./partials/_header.html') %>
+<section class="header__hero header__hero--about">
+    <div class="header__hero__container">
+        <p class="header__hero__container__p">Glänzende Ideen<br>für leuchtende<br>Augen</p>
+        <button class="header__hero__container__button">Angebote einholen</button>
+    </div>
+</section>
+</header>
 <main>
     <section class="max-width-container">
         <h2>Über mich</h2>
@@ -7,9 +14,5 @@
             <div class="about__image"></div>
         </div>
     </section>
-    <script>
-        let elem = document.getElementsByClassName("header__hero")[0];
-        elem.classList.add("header__hero--about");
-    </script>
 </main>
 <%= require('html-loader!./partials/_footer.html') %>
