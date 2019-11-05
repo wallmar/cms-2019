@@ -22,6 +22,10 @@
         @media screen and (max-width: 800px){
             width: 85%;
         }
+        @media screen and (max-width: 420px){
+            font-size: 10pt;
+            white-space: nowrap;
+        }
     }
     
 
@@ -47,12 +51,15 @@
                 display: block;
                 position: absolute;
                 right: 0;
-                top: 10px;
+                top: 0;
                 cursor: pointer;
                 font-size: 2em;
-                margin: 15px 0.5em 15px 0;
+                margin: 10px 0.5em 15px 0;
                 color: #00b9f2;
                 user-select: none;
+                @media screen and (max-width: 420px){
+                    margin-top: 0;
+                }
             }
         }
         @media screen and (max-width: 800px){
@@ -108,12 +115,18 @@
             &:after{
                 transform: scaleX(1);
                 transition: transform 250ms ease-in-out;
+                @media screen and (max-width: 800px){
+                    transform: scaleX(0.2);
+                }
             }
         }
         &--current{
             color: $primaryColor;
             &:after{
                 transform: scaleX(1);
+                @media screen and (max-width: 800px){
+                    transform: scaleX(0.2);
+                }
             }
         }
         @media screen and (max-width: 1000px){
@@ -151,6 +164,9 @@
                 display: inline;
                 line-height: 1.2em;
                 font-weight: 500;
+                @media screen and (max-width: 500px){
+                    font-size: $smallSize;
+                }
 
                 @media screen and (-webkit-min-device-pixel-ratio:0) { 
                     line-height: 1.3em;
@@ -169,7 +185,13 @@
                 &:hover{
                     background-color: #56c459;
                 }
+                @media screen and (max-width: 500px){
+                    font-size: $smallSize;
+                }
             }
+        }
+        @media screen and (max-width: 420px){
+            margin-top: 55px;
         }
 
         @media screen and (max-width: 1070px){
