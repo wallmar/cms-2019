@@ -10,15 +10,16 @@
         z-index: 1;
         top: 0;
         box-shadow: 0 1px 5px $primaryColor;
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 800px){
             display: block;
         } 
     }
 
     h1{
+        font-size: 15pt;
         width: 60%;
-        padding: 0.5em;
-        @media screen and (max-width: 900px){
+        padding: 0.1em 0.5em 0 0.5em;
+        @media screen and (max-width: 800px){
             width: 85%;
         }
     }
@@ -30,7 +31,7 @@
         color: $primaryColor;
     }
     &__nav{
-        width: 50%;
+        width: 55%;
         padding-right: 2em;
 
         &-toggle-input{
@@ -40,7 +41,7 @@
             display: none;
         }
 
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 800px){
             width: 100%;
             &-toggle-label{
                 display: block;
@@ -54,14 +55,14 @@
                 user-select: none;
             }
         }
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 800px){
             width: 100%;
             padding-right: 0;
         }
 
     }
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 800px){
         &__nav input:checked + &__list{
             display: flex;
             flex-direction: column;
@@ -79,10 +80,10 @@
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        margin-top: 1.5em;
+        margin-top: 1.7em;
         flex-wrap:wrap;
 
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 800px){
             &{
                 display: none;
                 margin-top: 0;
@@ -93,20 +94,34 @@
     &__link{
         text-decoration: none;
         color: black;
+        font-weight: 300;
+        font-size: $smallSize;
+        //source: https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border
+        &:after{
+            display:block;
+            content: '';
+            border-bottom: solid 2px $primaryColor;
+            transform: scaleX(0);
+        }
         &:hover{
             color: $primaryColor;
-            text-decoration: underline;
+            &:after{
+                transform: scaleX(1);
+                transition: transform 250ms ease-in-out;
+            }
         }
         &--current{
             color: $primaryColor;
-            text-decoration: underline;
+            &:after{
+                transform: scaleX(1);
+            }
         }
-        @media screen and (max-width: 1200px){
+        @media screen and (max-width: 1000px){
             &{
                 font-size: 12pt;
             }
         }
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 800px){
             &{
                 font-size: 18pt;
             }
@@ -117,7 +132,7 @@
         background-size: cover;
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 80px;
         &--about{
             background-image: url("../images/about-us.jpg");
         }
@@ -127,16 +142,15 @@
         padding-left: 53%;
         
         &__container{
-            margin: 1.8em 0;
+            margin: 2.5em 0;
             min-height: 30vh;
             &__p{
-                font-size: 3em;
+                font-size: 2.5em;
                 color: $primaryColor;
                 background-color: white;
                 display: inline;
-                line-height: 1.1em;
-
-               
+                line-height: 1.2em;
+                font-weight: 500;
 
                 @media screen and (-webkit-min-device-pixel-ratio:0) { 
                     line-height: 1.3em;
@@ -146,7 +160,7 @@
                 color: white;
                 background-color: #45b348;
                 border: none;
-                font-size: 1.3em;
+                font-size: $mediumSize;
                 padding: 0.5em;
                 border-radius: 6px;
                 display: block;
@@ -170,6 +184,6 @@
 }
 @-moz-document url-prefix() {
     .header__hero__container__p{
-        line-height: 1.1em;
+        line-height: 1.2em;
     }
 }
