@@ -8,7 +8,7 @@
     "pic_ubuntu  name_herzog  name_herzog  pic_herzog  symbol  pic_mueller  pic_mueller  pic_mueller"
     "name_ubuntu  name_ubuntu  quote_herzog quote_herzog  symbol  pic_mueller  pic_mueller  pic_mueller"
     "quote_ubuntu  quote_ubuntu  quote_ubuntu  empty_herzog  text_mueller  text_mueller text_mueller text_mueller";
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 800px){
     &{
       display: flex;
       flex-direction: column;
@@ -21,11 +21,6 @@
   &__picture{
     background-size: cover;
     background-position: center;
-    @media screen and (max-width: 600px){
-      &{
-        height: 300px;
-      }
-    }
     &--ubuntu{
       grid-area: pic_ubuntu;
       background-image: url("../images/dina-meyer.jpg");
@@ -37,6 +32,20 @@
     &--mueller{
       grid-area: pic_mueller;
       background-image: url("../images/vorstand.jpg");
+    }
+    @media screen and (max-width: 800px){
+      &{
+        height: 300px;
+        margin-left: 20vw;
+        margin-right: 20vw;
+      }
+    }
+    @media screen and (max-width: 500px){
+      &{
+        height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
   &__name{
@@ -52,6 +61,11 @@
     }
     &--mueller{
       text-align: right;
+    }
+    @media screen and (max-width: 800px){
+      &{
+        text-align: center;
+      }
     }
   }
   &__quote{
@@ -80,5 +94,10 @@
   &__text{
     grid-area: text_mueller;
     background-color: $sectionColor3;
+  }
+  @media screen and (max-width: 800px){
+    &{
+      text-align: center;
+    }
   }
 }
