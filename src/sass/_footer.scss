@@ -44,11 +44,11 @@
             &__item{
                 font-size: 0.8em;
                 padding-left: 0.8em;
+                word-wrap: break-word;
             }
         }
         &__p{
             margin-bottom: 0.3em;
-            word-wrap: break-spaces;
         }
     }
 }
