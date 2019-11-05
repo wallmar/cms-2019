@@ -85,6 +85,7 @@
         @media screen and (max-width: 900px){
             &{
                 display: none;
+                margin-top: 0;
             }
         }
     }
@@ -100,9 +101,14 @@
             color: $primaryColor;
             text-decoration: underline;
         }
-        @media screen and (max-width: 1000px){
+        @media screen and (max-width: 1200px){
             &{
                 font-size: 12pt;
+            }
+        }
+        @media screen and (max-width: 900px){
+            &{
+                font-size: 18pt;
             }
         }
     }
