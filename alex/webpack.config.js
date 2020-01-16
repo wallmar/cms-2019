@@ -13,7 +13,7 @@ const themeFolder  = `public/wp-content/themes/${themeName}`;
 const phpServerUrl = "alex.localhost";
 
 module.exports = {
-    entry: { main:'./src/index.js', admin: './src/sass/admin.scss' },
+    entry: { main:'./src/index.js', admin: './src/sass/admin.scss', style: './src/style.scss' },
     output: {
         path: path.resolve(__dirname, themeFolder),
     },
@@ -38,6 +38,7 @@ module.exports = {
                     }
                 }
             },
+
 
             // convert SASS to CSS, then minify and autoprefix
             {
@@ -123,7 +124,7 @@ module.exports = {
 
         // extract css into file
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: '[name].css'
         }),
 
         new CopyWebpackPlugin([

@@ -32,12 +32,10 @@ define( 'DB_PASSWORD', 'password' );
 define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
-define('FS_METHOD', 'direct');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -48,14 +46,14 @@ define('FS_METHOD', 'direct');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'V4m6O)op7|%J3FFaJiJ$oQ+/14c[7b24<-;)*)/3}L(yc|qi__#a^DeEfaupf|Z!');
-define('SECURE_AUTH_KEY',  '#9$>ndo~1O+i1etSOJ}Nc0G|n D$5C%6Zal1Jlu8{_P$@:TA,rs/Kk1$5Xz= 8wB');
-define('LOGGED_IN_KEY',    '8)1yl~5#4:zKn=_@Y[Tj[xXrGo-@3TO/4!-{&[$3nqCS;ClR{6vFCq|2TiXaS2} ');
-define('NONCE_KEY',        'p YjihlxRm|q`sgkACY]K[-2ZtJ7h v#6oG9q2u[6a> oic$EC92^c1`LC<ElV~-');
-define('AUTH_SALT',        'wMa:PM+=B5]7YkV[KZ@HXUsgItWPjex=g-[UY3q@x#R<IyU0YZlNnoO5+q=,Os8I');
-define('SECURE_AUTH_SALT', '7e<%]-JA$~OmI}BsJE|VJO)QUK-&sM]S(&e L-(g=R47_nTkZ TK,[7g[+ZJSn-=');
-define('LOGGED_IN_SALT',   'tq =k?dBJ0PCrB! d_MD||@IH#2Te;WE9NQF!8+@S7xas -22&M3j9{C&i(XxK|+');
-define('NONCE_SALT',       'i5Fz{48xcI*A0ixo.}%-m/VUOxq>`P5 = *eKHl^4]+dynb5<,&#S,Y^2.lt8yB5');
+define( 'AUTH_KEY',         '|9{h|XIl3LV7{1Xg+NE+@}GGf$KYZ]CJ7(UV[M Y,(xu%&VdZ#8sj9N)P[2NN^[x' );
+define( 'SECURE_AUTH_KEY',  'O8,g#0I+_1~H.Mcjpd6dO+8(H7;R?w:rWbhwtO7;g%e,CH2OWme0!e28gMGa#m%h' );
+define( 'LOGGED_IN_KEY',    'Smp1L7&(=jRQ+-a[[*e7qW l8:(;:X3;ufpb5>PPla^(8#fZ3iJksi>k0&==oMQs' );
+define( 'NONCE_KEY',        'jnJ%f+EGDPA/*~UD:/kCn;*^Ttd7;g,}!1{GrgY6It=th43_*u5{IQ=.>PPj6_PL' );
+define( 'AUTH_SALT',        'EJ95%f6LwnHP.qR1=;[bBF ~.BS)a-`#.NA6>f8S^xcE/ `@dq)Z%}Kc/l?r]U*3' );
+define( 'SECURE_AUTH_SALT', '_Oc[m}nqv>FO)D+f~fx1Qr:d0J7Cid`SoFhy68un+dlEZ;$L=Q+D%AXsU6*>>]7|' );
+define( 'LOGGED_IN_SALT',   'reBUjm|*`_YC>e@dV,tyocUl=7$SFhSzJiR7`m?w_82 7$hVz!ga^WwS*<S0#^+(' );
+define( 'NONCE_SALT',       '1#<XhU>WR} rjyCt!|_-k=w-vwPuKPxL&kj~7 G-tK3lP45.vQ#VwIki)!.:hMf_' );
 
 /**#@-*/
 
